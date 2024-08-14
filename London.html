@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore London With Us</title>
+    <link rel="icon" type="image/png" href="airplane.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5dc url('map.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #f5f5dc;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+        }
+        .content {
+            flex: 1;
+            margin-left: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #4B9CD3;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #4B9CD3;
+            color: #fff;
+        }
+        iframe {
+            width: 100%;
+            height: 480px;
+            border: none;
+            margin-bottom: 20px;
+        }
+        .place {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .place img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .place .details {
+            max-width: 600px;
+        }
+        .place a {
+            color: #4B9CD3;
+            text-decoration: none;
+        }
+        .place a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EXPLORING LONDON</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#big-ben">Big Ben</a></li>
+                <li><a href="#buckingham-palace">Buckingham Palace</a></li>
+                <li><a href="#tower-bridge">Tower Bridge</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Top Destinations</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Destination Name</th>
+                        <th>Country</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Big Ben</td>
+                        <td>UK</td>
+                        <td>The Great Bell of the clock at the Palace of Westminster.</td>
+                    </tr>
+                    <tr>
+                        <td>Buckingham Palace</td>
+                        <td>UK</td>
+                        <td>The official residence of the British monarch.</td>
+                    </tr>
+                    <tr>
+                        <td>Tower Bridge</td>
+                        <td>UK</td>
+                        <td>Iconic bridge known for its twin towers.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <iframe src="https://www.youtube.com/embed/JuujV5aJDqU" title="YouTube video"></iframe>
+
+            <div id="big-ben" class="place">
+                <img src="bigben.jpg" alt="Big Ben">
+                <div class="details">
+                    <h2>Big Ben</h2>
+                    <p><strong>Description:</strong> The Great Bell of the clock at the Palace of Westminster.</p>
+                    <p><strong>History:</strong> Completed in 1859, Big Ben is one of the UK's most famous landmarks.</p>
+                    <p><strong>Bollywood:</strong> Featured in <i>Kabhi Khushi Kabhie Gham</i> (2001).</p>
+                    <p><strong>Hollywood:</strong> Appeared in <i>V for Vendetta</i> (2005) and <i>Skyfall</i> (2012).</p>
+                    <a href="https://en.wikipedia.org/wiki/Big_Ben" target="_blank">Learn more</a>
+                </div>
+            </div>
+
+            <div id="buckingham-palace" class="place">
+                <img src="palace.jpg" alt="Buckingham Palace">
+                <div class="details">
+                    <h2>Buckingham Palace</h2>
+                    <p><strong>Description:</strong> The official residence of the British monarch.</p>
+                    <p><strong>History:</strong> Official residence since 1837, hosting many state events and ceremonies.</p>
+                    <p><strong>Bollywood:</strong> Shown in <i>Namastey London</i> (2007).</p>
+                    <p><strong>Hollywood:</strong> Featured in <i>Paddington 2</i> (2017).</p>
+                    <a href="https://en.wikipedia.org/wiki/Buckingham_Palace" target="_blank">Learn more</a>
+                </div>
+            </div>
+
+            <div id="tower-bridge" class="place">
+                <img src="towerbridge.jpg" alt="Tower Bridge">
+                <div class="details">
+                    <h2>Tower Bridge</h2>
+                    <p><strong>Description:</strong> Iconic bridge known for its twin towers.</p>
+                    <p><strong>History:</strong> Completed in 1894, known for its distinctive twin towers and drawbridge.</p>
+                    <p><strong>Bollywood:</strong> Featured in <i>Desi Boyz</i> (2011).</p>
+                    <p><strong>Hollywood:</strong> Appeared in <i>London Has Fallen</i> (2016).</p>
+                    <a href="https://en.wikipedia.org/wiki/Tower_Bridge" target="_blank">Learn more</a>
+                </div>
+            </div>
+
+            <footer>
+                <p>London's landmarks are iconic in both Bollywood and Hollywood films.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
